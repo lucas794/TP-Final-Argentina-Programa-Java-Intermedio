@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="4.0" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd">
+    <servlet>
+        <servlet-name>SvBorrarDocente</servlet-name>
+        <servlet-class>com.mycompany.pfinal_argprog.controlador.SvBorrarDocente</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SvAltasDocentes</servlet-name>
+        <servlet-class>com.mycompany.pfinal_argprog.controlador.SvAltasDocentes</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SvBorrarAsignatura</servlet-name>
+        <servlet-class>com.mycompany.pfinal_argprog.controlador.SvBorrarAsignatura</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SvAltasAsignaturas</servlet-name>
+        <servlet-class>com.mycompany.pfinal_argprog.controlador.SvAltasAsignaturas</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SvBorrarDocente</servlet-name>
+        <url-pattern>/SvBorrarDocente</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SvAltasDocentes</servlet-name>
+        <url-pattern>/SvAltasDocentes</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SvBorrarAsignatura</servlet-name>
+        <url-pattern>/SvBorrarAsignatura</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SvAltasAsignaturas</servlet-name>
+        <url-pattern>/SvAltasAsignaturas</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    <welcome-file-list>
+        <welcome-file>vista/alta.jsp</welcome-file>
+    </welcome-file-list>
+</web-app>
